@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Clinic</title>
+
+    <link rel="stylesheet" href="/static/css/ml.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-wave-square"></i>
+                </div>
+
+                <h2>AI Medical Center</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Clinics</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">About</a></li>
+
+            </ul>
+
+            <div class="nav-buttons">
+
+                <button class="admin-btn">Admin</button>
+
+                <button class="login-btn">Login</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ===================== PAGE TITLE ===================== -->
+
+    <section class="page-title">
+
+        <h1>Machine Learning Clinic</h1>
+
+        <p>Select a disease to begin diagnosis</p>
+
+    </section>
+
+    <!-- ===================== DISEASES ===================== -->
+
+    <section class="disease-section">
+
+        <div class="disease-container">
+
+            <!-- Kidney -->
+
+            <div class="disease-card kidney" id="kidneyCard">
+
+                <div class="card-top kidney-bg">
+
+                    <div class="icon blue">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                    </div>
+
+                    <h3>Kidney Disease</h3>
+
+                </div>
+
+                <div class="card-bottom">
+
+                    <p>
+                        Predict chronic kidney disease using clinical parameters.
+                    </p>
+
+                    <span>
+                        Start Diagnosis
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Liver -->
+
+            <div class="disease-card liver" id="liverCard">
+
+                <div class="card-top liver-bg">
+
+                    <div class="icon orange">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                    <h3>Liver Disease</h3>
+
+                </div>
+
+                <div class="card-bottom">
+
+                    <p>
+                        Detect liver disease through patient medical data.
+                    </p>
+
+                    <span>
+                        Start Diagnosis
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Lung -->
+
+            <div class="disease-card lung" id="lungCard">
+
+                <div class="card-top lung-bg">
+
+                    <div class="icon pink">
+
+                        <i class="fa-solid fa-wind"></i>
+
+                    </div>
+
+                    <h3>Lung Cancer</h3>
+
+                </div>
+
+                <div class="card-bottom">
+
+                    <p>
+                        Early detection of lung cancer using Machine Learning.
+                    </p>
+
+                    <span>
+                        Start Diagnosis
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Alzheimer -->
+
+            <div class="disease-card alzheimer" id="alzCard">
+
+                <div class="card-top alz-bg">
+
+                    <div class="icon purple">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                    </div>
+
+                    <h3>Alzheimer's Disease</h3>
+
+                </div>
+
+                <div class="card-bottom">
+
+                    <p>
+                        Predict Alzheimer's disease progression using AI.
+                    </p>
+
+                    <span>
+                        Start Diagnosis
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Epilepsy -->
+
+            <div class="disease-card epilepsy" id="epilepsyCard">
+
+                <div class="card-top epilepsy-bg">
+
+                    <div class="icon yellow">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                    </div>
+
+                    <h3>Epileptic Seizure</h3>
+
+                </div>
+
+                <div class="card-bottom">
+
+                    <p>
+                        Seizure prediction using neurological patient data.
+                    </p>
+
+                    <span>
+                        Start Diagnosis
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== FLOAT CHAT ===================== -->
+
+    <button class="chat-btn">
+
+        <i class="fa-regular fa-message"></i>
+
+    </button>
+
+    <script src="/static/java/script.js"></script>
+
+</body>
+
+</html>

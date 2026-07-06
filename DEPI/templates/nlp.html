@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Medical Assistant</title>
+
+    <link rel="stylesheet" href="/static/css/nlp.css">
+
+    <link rel="stylesheet" href="/static/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+
+                <i class="fa-solid fa-wave-square"></i>
+
+            </div>
+
+            <h2>AI Medical Center</h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="nlp.html" class="active">Clinics</a></li>
+
+            <li><a href="#">History</a></li>
+
+            <li><a href="#">About</a></li>
+
+        </ul>
+
+        <div class="nav-buttons">
+
+            <button class="admin-btn">
+
+                Admin
+
+            </button>
+
+            <button class="login-btn">
+
+                Login
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= CHAT ================= -->
+
+<section class="chat-container">
+
+<div class="chat-card">
+
+<!-- Header -->
+
+<div class="chat-header">
+
+<div class="assistant-info">
+
+<div class="assistant-icon">
+
+<i class="fa-solid fa-robot"></i>
+
+</div>
+
+<div>
+
+<h2>AI Medical Assistant</h2>
+
+<p>
+
+<span class="online-dot"></span>
+
+Online
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Messages -->
+
+<div class="chat-body" id="chatBody">
+
+<div class="message ai-message">
+
+<div class="avatar">
+
+<i class="fa-solid fa-robot"></i>
+
+</div>
+
+<div class="bubble">
+
+Hello! I'm your AI Medical Assistant.
+
+I can help you with:
+
+<br><br>
+
+&bull; Medical information
+
+<br>
+
+&bull; Disease symptoms
+
+<br>
+
+&bull; Medicine guidance
+
+<br>
+
+&bull; Health advice
+
+<br><br>
+
+How can I assist you today?
+
+<div class="time">
+
+03:04 PM
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+        <!-- ================= Suggested Questions ================= -->
+
+        <div class="suggestions">
+
+            <h3>
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                Suggested Questions
+
+            </h3>
+
+            <div class="suggestion-grid">
+
+                <button class="suggestion-btn">
+
+                    What are the symptoms of diabetes?
+
+                </button>
+
+                <button class="suggestion-btn">
+
+                    How to prevent heart disease?
+
+                </button>
+
+                <button class="suggestion-btn">
+
+                    Explain COVID-19 symptoms.
+
+                </button>
+
+                <button class="suggestion-btn">
+
+                    What causes high blood pressure?
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= INPUT AREA ================= -->
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your medical question here...">
+
+            <button id="sendBtn">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Floating Chat -->
+
+<button class="chat-btn">
+
+    <i class="fa-regular fa-message"></i>
+
+</button>
+
+<script src="/static/js/nlp.js"></script>
+
+</body>
+
+</html>

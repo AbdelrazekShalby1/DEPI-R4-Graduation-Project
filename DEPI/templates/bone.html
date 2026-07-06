@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bone Fracture Detection</title>
+
+    <link rel="stylesheet" href="/static/css/cv.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-wave-square"></i>
+                </div>
+
+                <h2>AI Medical Center</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html" class="active">Clinics</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">About</a></li>
+
+            </ul>
+
+            <div class="nav-buttons">
+
+                <button class="admin-btn">Admin</button>
+
+                <button class="login-btn">Login</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= TITLE ================= -->
+
+    <section class="page-title">
+
+        <a href="cv.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Clinic
+
+        </a>
+
+        <h1>Bone Fracture Detection</h1>
+
+        <p>
+
+            Upload a medical image for AI analysis
+
+        </p>
+
+    </section>
+
+    <!-- ================= CONTENT ================= -->
+
+    <section class="upload-section">
+
+        <!-- Upload -->
+
+        <div class="upload-card">
+
+            <div class="upload-area">
+
+                <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+
+                <h2>
+
+                    Drag & Drop Image Here
+
+                </h2>
+
+                <span>or</span>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                    hidden>
+
+                <label
+                    for="imageInput"
+                    class="browse-btn">
+
+                    Browse Files
+
+                </label>
+
+                <div class="formats">
+
+                    <span><i class="fa-regular fa-file-image"></i> JPG</span>
+
+                    <span><i class="fa-regular fa-file-image"></i> PNG</span>
+
+                    <span><i class="fa-regular fa-file-image"></i> JPEG</span>
+
+                </div>
+
+            </div>
+
+            <!-- Preview -->
+
+            <div class="preview-box">
+
+                <img
+                    id="previewImage"
+                    src=""
+                    alt="Preview">
+
+            </div>
+
+            <button class="analyze-btn">
+
+                Analyze Image
+
+            </button>
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="info-card">
+
+            <div class="info-title">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <h2>Information</h2>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>📋 Guidelines</h3>
+
+                <ul>
+
+                    <li>Use high-quality X-Ray images.</li>
+
+                    <li>Supported formats: JPG, PNG, JPEG.</li>
+
+                    <li>Maximum size: 10 MB.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>🎯 AI Analysis</h3>
+
+                <ul>
+
+                    <li>Deep Learning Model.</li>
+
+                    <li>95%+ Accuracy.</li>
+
+                    <li>Instant Prediction.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="info-box">
+
+                <h3>🩺 About Bone Fracture</h3>
+
+                <p>
+
+                    Upload an X-Ray image to detect bone fractures using an AI-powered Computer Vision model.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RESULT ================= -->
+
+    <section class="result-section">
+
+        <div class="result-card">
+
+            <h2>
+
+                Prediction Result
+
+            </h2>
+
+            <h1 id="predictionResult">
+
+                Waiting...
+
+            </h1>
+
+            <p id="predictionProbability">
+
+                Confidence : --
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Floating Chat -->
+
+    <button class="chat-btn">
+
+        <i class="fa-regular fa-message"></i>
+
+    </button>
+
+    <script src="/static/js/cv.js"></script>
+
+</body>
+
+</html>

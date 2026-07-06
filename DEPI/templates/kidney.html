@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kidney Disease</title>
+
+    <link rel="stylesheet" href="/static/css/disease.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-wave-square"></i>
+                </div>
+
+                <h2>AI Medical Center</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ml.html" class="active">Clinics</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">About</a></li>
+
+            </ul>
+
+            <div class="nav-buttons">
+
+                <button class="admin-btn">Admin</button>
+
+                <button class="login-btn">Login</button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-title">
+
+        <a href="ml.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Clinic
+
+        </a>
+
+        <h1>Kidney Disease</h1>
+
+        <p>
+
+            Enter patient information for AI-powered diagnosis
+
+        </p>
+
+    </section>
+
+    <!-- ================= CONTENT ================= -->
+
+    <section class="content">
+
+        <!-- LEFT -->
+
+        <div class="patient-card">
+
+            <div class="card-title">
+
+                <div class="title-icon">
+
+                    <i class="fa-solid fa-wave-square"></i>
+
+                </div>
+
+                <h2>Patient Information</h2>
+
+            </div>
+
+            <form id="kidneyForm">
+
+                <div class="grid">
+
+                    <div class="input-group">
+
+                        <label>Age</label>
+
+                        <input type="number" placeholder="50">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Blood Pressure (mm/Hg)</label>
+
+                        <input type="number" placeholder="80">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Specific Gravity</label>
+
+                        <input type="text" placeholder="1.020">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Albumin</label>
+
+                        <input type="number" placeholder="0">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Sugar</label>
+
+                        <input type="number" placeholder="0">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Blood Glucose (mg/dL)</label>
+
+                        <input type="number" placeholder="121">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Blood Urea (mg/dL)</label>
+
+                        <input type="number" placeholder="36">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Serum Creatinine (mg/dL)</label>
+
+                        <input type="number" placeholder="1.2">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Hemoglobin (g/dL)</label>
+
+                        <input type="number" placeholder="15.4">
+
+                    </div>
+
+                </div>
+
+                <button class="predict-btn">
+
+                    Predict Disease
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="info-card">
+
+            <div class="info-header">
+
+                <div class="info-icon">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                </div>
+
+                <h2>Disease Information</h2>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Description</h3>
+
+                <p>
+
+                    Chronic Kidney Disease (CKD) is a condition characterized by gradual loss of kidney function over time. Early detection and treatment can slow disease progression.
+
+                </p>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Common Symptoms</h3>
+
+                <ul>
+
+                    <li>Fatigue and weakness</li>
+
+                    <li>Swelling in ankles and feet</li>
+
+                    <li>Frequent urination</li>
+
+                    <li>Blood in urine</li>
+
+                    <li>Foamy urine</li>
+
+                </ul>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Risk Factors</h3>
+
+                <ul>
+
+                    <li>Diabetes</li>
+
+                    <li>High blood pressure</li>
+
+                    <li>Heart disease</li>
+
+                    <li>Family history</li>
+
+                    <li>Age over 60</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RESULT -->
+
+    <section class="result-section">
+
+        <div class="result-card">
+
+            <h2>Prediction Result</h2>
+
+            <h1 id="predictionResult">
+
+                Waiting...
+
+            </h1>
+
+            <p id="predictionProbability">
+
+                Probability: --
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <button class="chat-btn">
+
+        <i class="fa-regular fa-message"></i>
+
+    </button>
+
+    <script src="/static/java/disease.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lung Cancer</title>
+
+    <link rel="stylesheet" href="/static/css/disease.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+
+<i class="fa-solid fa-wave-square"></i>
+
+</div>
+
+<h2>AI Medical Center</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="ml.html" class="active">Clinics</a></li>
+
+<li><a href="#">History</a></li>
+
+<li><a href="#">About</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<button class="admin-btn">Admin</button>
+
+<button class="login-btn">Login</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="page-title">
+
+<a href="ml.html" class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back to Clinic
+
+</a>
+
+<h1>Lung Cancer</h1>
+
+<p>
+
+Enter patient information for AI-powered diagnosis
+
+</p>
+
+</section>
+
+<section class="content">
+
+<div class="patient-card">
+
+<div class="card-title">
+
+<div class="title-icon">
+
+<i class="fa-solid fa-wave-square"></i>
+
+</div>
+
+<h2>Patient Information</h2>
+
+</div>
+
+<form>
+
+<div class="grid">
+
+<div class="input-group">
+
+<label>Age</label>
+
+<input type="number" placeholder="50">
+
+</div>
+
+<div class="input-group">
+
+<label>Gender</label>
+
+<select>
+
+<option>Select Gender</option>
+
+<option>Male</option>
+
+<option>Female</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Smoking</label>
+
+<input type="number" placeholder="10">
+
+</div>
+
+<div class="input-group">
+
+<label>Air Pollution</label>
+
+<input type="number" placeholder="6">
+
+</div>
+
+<div class="input-group">
+
+<label>Dust Allergy</label>
+
+<input type="number" placeholder="5">
+
+</div>
+
+<div class="input-group">
+
+<label>Alcohol Use</label>
+
+<input type="number" placeholder="2">
+
+</div>
+
+<div class="input-group">
+
+<label>Genetic Risk</label>
+
+<input type="number" placeholder="3">
+
+</div>
+
+<div class="input-group">
+
+<label>Chronic Lung Disease</label>
+
+<input type="number" placeholder="1">
+
+</div>
+
+<div class="input-group">
+
+<label>Chest Pain</label>
+
+<input type="number" placeholder="4">
+
+</div>
+
+</div>
+
+<button class="predict-btn">
+
+Predict Disease
+
+</button>
+
+</form>
+
+</div>
+
+<div class="info-card">
+
+<div class="info-header">
+
+<div class="info-icon">
+
+<i class="fa-solid fa-circle-info"></i>
+
+</div>
+
+<h2>Disease Information</h2>
+
+</div>
+
+<div class="box">
+
+<h3>Description</h3>
+
+<p>
+
+Lung cancer is one of the most common cancers worldwide. Early detection improves survival and treatment outcomes.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Common Symptoms</h3>
+
+<ul>
+
+<li>Persistent cough</li>
+
+<li>Coughing blood</li>
+
+<li>Chest pain</li>
+
+<li>Shortness of breath</li>
+
+<li>Weight loss</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>Risk Factors</h3>
+
+<ul>
+
+<li>Smoking</li>
+
+<li>Secondhand smoke</li>
+
+<li>Air pollution</li>
+
+<li>Family history</li>
+
+<li>Radon exposure</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="result-section">
+
+<div class="result-card">
+
+<h2>Prediction Result</h2>
+
+<h1 id="predictionResult">
+
+Waiting...
+
+</h1>
+
+<p>
+
+Probability : --
+
+</p>
+
+</div>
+
+</section>
+
+<button class="chat-btn">
+
+<i class="fa-regular fa-message"></i>
+
+</button>
+
+<script src="/static/java/disease.js"></script>
+
+</body>
+
+</html>

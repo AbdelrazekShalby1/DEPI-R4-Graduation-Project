@@ -1,0 +1,56 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 675ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 685ms/step
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 826ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 836ms/step
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 1s/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 1s/step
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 656ms/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 666ms/step
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 1s/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 1s/step
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+ * Serving Flask app 'app'
+ * Debug mode: off
+Serving on http://127.0.0.1:8000
+Serving on http://127.0.0.1:8000
+Serving on http://127.0.0.1:8000
+Serving on http://127.0.0.1:8000
+Serving on http://127.0.0.1:8000
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3s/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 3s/step
+Serving on http://127.0.0.1:8000
+Serving on http://127.0.0.1:8000
+
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 8s/step
+[1m1/1[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8s[0m 8s/step
+Serving on http://127.0.0.1:8000
+Serving on http://127.0.0.1:8000

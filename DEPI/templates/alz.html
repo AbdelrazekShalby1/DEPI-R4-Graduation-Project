@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alzheimer's Disease</title>
+
+    <link rel="stylesheet" href="/static/css/disease.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+
+<i class="fa-solid fa-wave-square"></i>
+
+</div>
+
+<h2>AI Medical Center</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="ml.html" class="active">Clinics</a></li>
+
+<li><a href="#">History</a></li>
+
+<li><a href="#">About</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<button class="admin-btn">Admin</button>
+
+<button class="login-btn">Login</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="page-title">
+
+<a href="ml.html" class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back to Clinic
+
+</a>
+
+<h1>Alzheimer's Disease</h1>
+
+<p>
+
+Enter patient information for AI-powered diagnosis
+
+</p>
+
+</section>
+
+<section class="content">
+
+<div class="patient-card">
+
+<div class="card-title">
+
+<div class="title-icon">
+
+<i class="fa-solid fa-wave-square"></i>
+
+</div>
+
+<h2>Patient Information</h2>
+
+</div>
+
+<form>
+
+<div class="grid">
+
+<div class="input-group">
+
+<label>Age</label>
+
+<input type="number" placeholder="70">
+
+</div>
+
+<div class="input-group">
+
+<label>Gender</label>
+
+<select>
+
+<option>Select Gender</option>
+
+<option>Male</option>
+
+<option>Female</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>MMSE Score</label>
+
+<input type="number" placeholder="24">
+
+</div>
+
+<div class="input-group">
+
+<label>Memory Test</label>
+
+<input type="number" placeholder="78">
+
+</div>
+
+<div class="input-group">
+
+<label>Cognitive Score</label>
+
+<input type="number" placeholder="82">
+
+</div>
+
+<div class="input-group">
+
+<label>Family History</label>
+
+<select>
+
+<option>No</option>
+
+<option>Yes</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Brain Volume</label>
+
+<input type="number" placeholder="1250">
+
+</div>
+
+<div class="input-group">
+
+<label>Education Years</label>
+
+<input type="number" placeholder="14">
+
+</div>
+
+<div class="input-group">
+
+<label>Physical Activity</label>
+
+<input type="number" placeholder="3">
+
+</div>
+
+</div>
+
+<button class="predict-btn">
+
+Predict Disease
+
+</button>
+
+</form>
+
+</div>
+
+<div class="info-card">
+
+<div class="info-header">
+
+<div class="info-icon">
+
+<i class="fa-solid fa-circle-info"></i>
+
+</div>
+
+<h2>Disease Information</h2>
+
+</div>
+
+<div class="box">
+
+<h3>Description</h3>
+
+<p>
+
+Alzheimer's disease is a progressive neurological disorder that gradually destroys memory, thinking skills, and the ability to perform daily tasks.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Common Symptoms</h3>
+
+<ul>
+
+<li>Memory loss</li>
+
+<li>Difficulty planning</li>
+
+<li>Confusion with time</li>
+
+<li>Trouble understanding visual images</li>
+
+<li>Problems with speaking</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>Risk Factors</h3>
+
+<ul>
+
+<li>Age over 65</li>
+
+<li>Family history</li>
+
+<li>Down syndrome</li>
+
+<li>Mild cognitive impairment</li>
+
+<li>Head trauma</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="result-section">
+
+<div class="result-card">
+
+<h2>Prediction Result</h2>
+
+<h1 id="predictionResult">
+
+Waiting...
+
+</h1>
+
+<p>
+
+Probability : --
+
+</p>
+
+</div>
+
+</section>
+
+<button class="chat-btn">
+
+<i class="fa-regular fa-message"></i>
+
+</button>
+
+<script src="/static/java/disease.js"></script>
+
+</body>
+
+</html>
