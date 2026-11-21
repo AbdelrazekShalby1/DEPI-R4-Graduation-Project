@@ -24,7 +24,9 @@ except ImportError:  # pragma: no cover - the app still runs without CORS.
 
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = BASE_DIR.parent
-MODELS_DIR = PROJECT_DIR / "Models"
+# Model and chatbot folders are checked in directly under the repository root.
+# Resolve from this file so launching from another working directory also works.
+MODELS_DIR = PROJECT_DIR
 ML_MODELS_DIR = MODELS_DIR / "ml-models"
 CHATBOT_DIR = MODELS_DIR / "chatbot-main"
 BRAIN_DETECTION_DIR = MODELS_DIR / "brain_tomor detection"
@@ -655,7 +657,7 @@ def unavailable_chatbot_text() -> str:
     reason = _chatbot_load_error or "unknown startup error"
     return (
         "الشات بوت متوصل بالموقع، لكنه محتاج مفتاح Gemini قبل ما يرد. "
-        "ضيف GEMINI_KEY_1 في ملف Models/chatbot-main/.env ثم أعد تشغيل السيرفر. "
+        "ضيف GEMINI_KEY_1 في ملف chatbot-main/.env ثم أعد تشغيل السيرفر. "
         f"السبب الحالي: {reason}"
     )
 
